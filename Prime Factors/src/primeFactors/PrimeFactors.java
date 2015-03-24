@@ -11,15 +11,11 @@ public class PrimeFactors {
 	 * @return
 	 */
 	public static java.util.List<Integer> generate (int i) {
-		if(i == 1){
-			return new ArrayList<Integer>();
+		ArrayList<Integer> primeFactors = new ArrayList<Integer>();
+		if(i > 1){
+			primeFactors.add(i);
 		}
-		else{
-			ArrayList<Integer> primeFactors = new ArrayList<Integer>();
-			primeFactors.add(2);
-			return primeFactors;
-		}
-		
+		return primeFactors;
 	}
 
 	
