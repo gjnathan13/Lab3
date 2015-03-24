@@ -14,8 +14,8 @@ public class PrimeFactors {
 		ArrayList<Integer> primeFactors = new ArrayList<Integer>();
 		if(i > 1){
 			int remainder = i%2;
-			if(remainder == 0 && i/2 == 2){
-				primeFactors.add(i/2);
+			if(remainder == 0 && i != 2){
+				primeFactors.add(2);
 				primeFactors.add(i/2);
 			}
 			else{
