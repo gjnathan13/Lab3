@@ -16,6 +16,10 @@ public class PrimeFactors {
 			primeFactors.add(2);
 			i = i/2;
 		}	
+		while(i%3 ==0){
+			primeFactors.add(3);
+			i = i/3;
+		}
 		if(i > 1){
 		primeFactors.add(i);
 		}
