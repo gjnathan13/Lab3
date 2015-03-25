@@ -47,5 +47,11 @@ public class PrimeFactorsTest {
 	public void testNine(){
 		assertEquals(list(3,3), PrimeFactors.generate(9));
 	}
+	
+	@Test
+	
+	public void testLargeNumber(){
+		assertEquals(list(5,7,7,1327), PrimeFactors.generate(325115));
+	}
 
 }
