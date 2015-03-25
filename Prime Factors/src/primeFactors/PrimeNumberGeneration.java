@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class PrimeNumberGeneration {
 
+	/**
+	 * Generates a list of prime numbers smaller than the input integer
+	 * 
+	 * @param inputNumber
+	 * @return
+	 */
 	public static java.util.List<Integer> generateSmallerPrimes(int inputNumber) {
 		ArrayList<Integer> primesList = new ArrayList<Integer>();
 		int numberToAdd = 2;
