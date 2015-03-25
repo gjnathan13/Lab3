@@ -8,7 +8,7 @@ public class PrimeNumberGeneration {
 		ArrayList<Integer> primesList = new ArrayList<Integer>();
 		int numberToAdd = 2;
 		while(numberToAdd < inputNumber){
-			if(numberToAdd != 4){
+			if(numberToAdd%2 != 0 || numberToAdd == 2){
 			primesList.add(numberToAdd);
 			}
 			numberToAdd++;
