@@ -8,8 +8,15 @@ public class PrimeNumberGeneration {
 		ArrayList<Integer> primesList = new ArrayList<Integer>();
 		int numberToAdd = 2;
 		while(numberToAdd < inputNumber){
-			if(numberToAdd%2 != 0 && numberToAdd%3 != 0 || numberToAdd == 2 || numberToAdd == 3){
-			primesList.add(numberToAdd);
+			boolean primeCheck = true;
+			for(int i=2;i < numberToAdd; i++){
+				if(numberToAdd%i == 0){
+					primeCheck = false;
+					break;
+				}
+			}
+			if(primeCheck){
+				primesList.add(numberToAdd);
 			}
 			numberToAdd++;
 		}
