@@ -12,18 +12,14 @@ public class PrimeFactors {
 	 */
 	public static java.util.List<Integer> generate (int i) {
 		ArrayList<Integer> primeFactors = new ArrayList<Integer>();
+		while(i%2 == 0){
+			primeFactors.add(2);
+			i = i/2;
+		}	
 		if(i > 1){
-			int remainder = i%2;
-			if(remainder == 0 && i != 2){
-				primeFactors.add(2);
-				primeFactors.add(i/2);
-			}
-			else{
-				primeFactors.add(i);
-			}
+		primeFactors.add(i);
 		}
 		return primeFactors;
 	}
 
-	
 }

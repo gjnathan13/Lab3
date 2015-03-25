@@ -40,7 +40,7 @@ public class PrimeFactorsTest {
 	
 	@Test
 	public void testEight(){
-		assertEquals(list(2,2,2), PrimeFactors.generate(6));
+		assertEquals(list(2,2,2), PrimeFactors.generate(8));
 	}
 
 }
