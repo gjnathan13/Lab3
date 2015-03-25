@@ -6,8 +6,10 @@ public class PrimeNumberGeneration {
 
 	public static java.util.List<Integer> generateSmallerPrimes(int inputNumber) {
 		ArrayList<Integer> primesList = new ArrayList<Integer>();
-		if(inputNumber == 3){
-			primesList.add(2);
+		int numberToAdd = 2;
+		while(numberToAdd < inputNumber){
+			primesList.add(numberToAdd);
+			numberToAdd++;
 		}
 		return primesList;
 	}
