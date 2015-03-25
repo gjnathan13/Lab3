@@ -10,18 +10,15 @@ public class PrimeFactors {
 	 * @param i
 	 * @return
 	 */
-	public static java.util.List<Integer> generate (int i) {
+	public static java.util.List<Integer> generate (int number) {
 		ArrayList<Integer> primeFactors = new ArrayList<Integer>();
-		while(i%2 == 0){
-			primeFactors.add(2);
-			i = i/2;
-		}	
-		while(i%3 ==0){
-			primeFactors.add(3);
-			i = i/3;
-		}
-		if(i > 1){
-		primeFactors.add(i);
+		while(number > 1){
+			int factor = 2;
+			while(number%factor != 0){
+				factor++;
+			}
+			primeFactors.add(factor);
+			number = number/factor;
 		}
 		return primeFactors;
 	}
